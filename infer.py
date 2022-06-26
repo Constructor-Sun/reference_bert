@@ -1,7 +1,7 @@
 import torch
 import pickle
 import numpy as np
-from dataloader import Sentence
+from data_loader import Sentence
 from model import BertSeg
 from torch.utils.data import DataLoader
 from tqdm import tqdm

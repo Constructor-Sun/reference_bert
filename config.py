@@ -2,19 +2,19 @@ import os
 import torch
 
 # bert_model = './pretrained_bert_models/bert-base-chinese/'
-bert_model = './reference/pretrained_bert_models/bert-base-chinese/'
-roberta_model = './reference/pretrained_bert_models/chinese_roberta_wwm_large_ext/'
+bert_model = './reference_bert/pretrained_bert_models/bert-base-chinese/'
+roberta_model = './reference_bert/pretrained_bert_models/chinese_roberta_wwm_large_ext/'
 
-model_dir = './reference/experiments/'
-data_dir = './reference/data/'
+model_dir = './reference_bert/experiments/'
+data_dir = './reference_bert/data/'
 # model_dir = './experiments/'
 # data_dir = './data/'
 train_dir = data_dir + 'training.npz'
 test_dir = data_dir + 'test.npz'
 files = ['training', 'test']
 vocab_path = data_dir + 'vocab.npz'
-exp_dir = './reference/experiments/'
-case_dir = './reference/case/bad_case.txt'
+exp_dir = './reference_bert/experiments/'
+case_dir = './reference_bert/case/bad_case.txt'
 # exp_dir = './experiments/'
 # case_dir = './case/bad_case.txt'
 log_dir = exp_dir + 'train.log'

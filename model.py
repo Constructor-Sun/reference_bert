@@ -14,7 +14,7 @@ class BertSeg(BertPreTrainedModel):
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
 
         self.bilstm = nn.LSTM(
-            input_size=1024,  # 768
+            input_size=768,  # 768
             hidden_size=config.hidden_size // 2,  # 1024 / 2
             batch_first=True,
             num_layers=2,
